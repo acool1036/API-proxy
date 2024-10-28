@@ -1,11 +1,11 @@
 [[headers]]
-  for = "/api/*"
+  for = "/*"
     [headers.values]
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Headers = "*"
     Access-Control-Allow-Methods = "*"
 [[redirects]]
-  from = "/api/*"
-  to = "homeaccesscenterapi.vercel.app/api/:splat"
+  from = "/*"
+  to = "homeaccesscenterapi.vercel.app/:splat"
   status = 200
   force = true
